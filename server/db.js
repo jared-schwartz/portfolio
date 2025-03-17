@@ -10,7 +10,8 @@ const createTables = async () => {
         CREATE TABLE projects(
         id SERIAL PRIMARY KEY,
         project_name VARCHAR(50),
-        description VARCHAR(255)
+        description VARCHAR(255),
+        link VARCHAR(50)
         );
     `;
     await client.query(SQL);
@@ -20,15 +21,16 @@ const seedData = async () => {
     
     await createProject({
         project_name: "TEST",
-        description: "TEST TEST"
+        description: "TEST TEST",
+        link: "https://github.com/jared-schwartz/capstone-project"
     });
 };
 
-const createProject = async ({project_name, description}) => {
+const createProject = async ({project_name, description, link}) => {
     const SQL =`
-    INSERT INTO projects(project_name, description) VALUES($1,$2) RETURNING *
+    INSERT INTO projects(project_name, description, link) VALUES($1,$2,$3) RETURNING *
     `
-    const response = await client.query(SQL, [project_name, description]);
+    const response = await client.query(SQL, [project_name, description, link]);
     return  response.rows[0];
 };
 

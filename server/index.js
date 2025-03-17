@@ -12,7 +12,7 @@ const path = require("path");
 const app = express();
 app.use(express.json());
 
-// Serve frontend
+// Server frontend
 app.get("/", (req, res) =>
   res.sendFile(path.join(__dirname, "../client/dist/index.html"))
 );
