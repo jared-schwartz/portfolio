@@ -8,22 +8,33 @@ export default function About ({}){
     return (
         <>
         <div id="about-me">
-        <h1>About Me</h1>
             <div id="container">
-                <img src="/my_photo.jpg" alt="My photo" width="35%" />
+            <h1><u>Jared Schwartz</u></h1>
+                    <h3>
+                    Pineville, LA<br />
+                    262-327-1070<br />
+                    jareds1070@gmail.com<br />
+                    linkedin.com/in/jaredschwartz1070<br />
+                    github.com/jared-schwartz<br />
+                    
+                    </h3>
+                    <h1><b><u>Technical Skills</u></b></h1>
+                    <p>JavaScript | React.js | HTML/CSS | Node.js | Git | REST APIs | Agile Development | PSQL | Web Development |
+                    Customer Relationship Management | Problem Solving</p>
                     <div id="info-me">
                         <a>
-                        I am a results-driven professional with a strong foundation in web 
-                        development, specializing in HTML and JavaScript, complemented 
-                        by hands-on experience in troubleshooting and customer 
-                        satisfaction. Proven ability to manage multiple tasks effectively 
-                        while delivering high-quality service in fast-paced environments. 
-                        Proficent at leveraging technical skills from previous roles in machinery 
-                        and automotive industries to excel as a Frontend Developer or Software 
-                        Engineer.</a>
+                        I'm a passionate web developer with a strong foundation 
+                        in HTML and JavaScript. I have hands-on experience 
+                        troubleshooting issues and ensuring customer satisfaction. 
+                        I thrive in fast-paced environments, while prioritizing my 
+                        tasks while maintaining high-quality work. My background 
+                        in machinery and the automotive industry has sharpened my 
+                        technical skills, which I now apply to frontend development, backend development 
+                        and software engineering overall.
+                        </a>
                     </div>
             </div>
-                    <h1>Professional Experience</h1>
+                    <h1><u>Professional Experience</u></h1>
                         <div id="professional-experience-1">
                             <h2>Grainger, On-site Service Representative</h2>
                             <a>May 2023 - Present</a>

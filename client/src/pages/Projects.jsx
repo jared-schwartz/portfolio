@@ -33,13 +33,15 @@ export default function Projects ({}){
             <ul id="project-catalog">
                 {projects.length > 0 ? (
                     projects.map((project) => (
-                        <li key={project.id} onClick={() => navigate(`/projects/${project.id}`)}>
+                        <li key={project.id} >
                             <p id="project-headers">Project Name:</p>
-                            <p>{project.project_name}</p>
+                            <p>{project.projectname}</p>
                             <p id="project-headers">Description:</p>
-                            <p>{project.description} </p> 
+                            <p>{project.projectdescription} </p> 
                             <p id="project-headers">Project Link:</p>
-                            <p>{project.link} </p>
+                            <a href={project.link}>
+                                <p> LINK </p>
+                            </a>
                         </li>
                     ))
                 ):(

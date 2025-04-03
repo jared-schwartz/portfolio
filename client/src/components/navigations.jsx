@@ -6,8 +6,7 @@ function Navigations() {
     <nav id="navbar">
       <h2>Jared Schwartz's Portfolio</h2>
         <div id="links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/">About Me</Link>
           <Link to="/projects">Projects</Link>
         </div>
     </nav>

@@ -2,10 +2,7 @@ body {
   color: black;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-image: url('https://images.squarespace-cdn.com/content/v1/6181ba9106c6fc4277f2d75c/3ee665a0-2748-48c8-9d97-ff888c18844b/shadowtrackers-webbackground-dark.jpg');
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: 100%;
+  background-color: whitesmoke;
 }
 
 
@@ -39,6 +36,12 @@ body {
   text-align: center;
 }
 
+#project-page h1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
 #project-catalog {
   list-style: none;
   text-align: center;
@@ -50,15 +53,15 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: whitesmoke;
   margin-left: 10%;
   margin-right: 10%;
-  border-radius: 10px;
-  border-color: rgb(63, 62, 62);
-  border-style: solid;
+  border-radius: 5px;
   font-size: larger;
+  border-width: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 2px 2px 2px 3px grey ;
 }
 
 #project-catalog p {
@@ -76,11 +79,24 @@ body {
 
 #about-me h1 {
   text-align: center;
+  color: black;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
 }
 #container {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  text-align: center; 
+  height: auto; 
+  margin-top: 10px;
+}
+
+#about-me {
+  margin-top: 5px;
 }
 
 #about-me a {
@@ -89,41 +105,101 @@ body {
 
 #info-me {
   display: flex;
-  background-color: #e0e0e0;
+  background-color: whitesmoke;
   border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(63, 62, 62);
+  border-style: none;
   justify-content: center;
   align-items: center;
   padding: 10px;
   text-align: center;
   max-height: 200px;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 3px grey ;
+}
+
+#about-me p {
+  font-size: large;
+  margin-top: 5px;
+  font-weight: 600;
 }
 
 #professional-experience-1 {
-  background-color: #e0e0e0;
+  background-color: whitesmoke;;
   border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(63, 62, 62);
+  border-style: none;
   padding: 10px;
   margin-top: 10px;
+  box-shadow: 2px 2px 2px 3px grey ;
 }
 
 #professional-experience-2 {
-  background-color: #e0e0e0;
+  background-color: whitesmoke;;
   border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(63, 62, 62);
   padding: 10px;
   margin-top: 10px;
+  box-shadow: 2px 2px 2px 3px grey ;
 }
 
 #professional-experience-3 {
-  background-color: #e0e0e0;
+  background-color: whitesmoke;;
   border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(63, 62, 62);
+  box-shadow: 2px 2px 2px 3px grey ;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#home-page {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+
+#info {
+background-color: black;
+padding: 5px;
+row-gap: 10px;
+}
+
+#admin-page {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+
+#projectForm {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  
+}
+
+#projectForm h3 {
+  text-decoration: underline;
+}
+
+#userForm {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+#admin-header {
+  text-align: center;
 }
